@@ -401,6 +401,8 @@ while True:
 
         #pulsares
         pulsares = "18.Pulsares"
+        pulsares = pulsares.replace('Pulsares',f'{Fore.BLUE}Pulsares{Style.RESET_ALL}')
+        print(pulsares)
         print("\n")
         print("Son estrellas de neutrones altamente magnéticas que emiten 'haces' de radiación electromagnética desde sus polos magnéticos. cuando estos 'haces' se alinean con la tierra, se detectan como pulsos periódicos de radiación, de ahí su nombre")
         print("\n")
