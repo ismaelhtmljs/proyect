@@ -2,11 +2,19 @@
 import time
 import pyfiglet
 from colorama import Fore, Style, init
+from rich.console import Console
+import sys
 
 #Activación de codigos
 figlet = pyfiglet.Figlet(font='big')
+console = Console()
 init()
-
+#animacion
+for _ in range(5):
+    mensaje = print(".", end="", flush=True)
+    time.sleep(1)
+sys.stdout.write("\r" + " " * 5 + "\r")
+sys.stdout.flush()
 #Titulo
 print(figlet.renderText('Leectura'))
 print(figlet.renderText('espacial'))
@@ -51,14 +59,16 @@ time.sleep(0.9)
 
 #Animación de puntos
 for _ in range(10):
-    print(".", end="", flush=True)
+    mensaje = print(".", end=" ", flush=True)
     time.sleep(1)
-
+sys.stdout.write("\r" + " " * 20 + "\r")
+sys.stdout.flush()
 print("\n")
 
 
 #If and Else
 while True:
+    #Separacion
     if nombre == R_nombre and contraseña == R_contraseña:
         print("\n")
         print("-"*209)
@@ -210,6 +220,7 @@ while True:
         print(materia_oscura)
         print("\n")
         print("Aunque no se puede ver directamente, se cree que el universo que la matería oscura y la energía oscura constituyen la mayor parte del universo y tienen un papel fundamental en su evolución.")
+        print("\n")
         enlace = "ver foto : https://www.ngenespanol.com/wp-content/uploads/2022/10/ngc-1398-Grande.jpeg"
         enlace = enlace.replace('https://www.ngenespanol.com/wp-content/uploads/2022/10/ngc-1398-Grande.jpeg',f'{Fore.CYAN}https://www.ngenespanol.com/wp-content/uploads/2022/10/ngc-1398-Grande.jpeg{Style.RESET_ALL}')
         print(enlace)
@@ -285,7 +296,7 @@ while True:
         estrellas_binarias = estrellas_binarias.replace('Estrellas Binarias',f'{Fore.LIGHTRED_EX}Estrellas Binarias{Style.RESET_ALL}')
         print(estrellas_binarias)
         print("\n")
-        print("Muchas estrellas en el universo existen como parte de sistemas binarios, donde dos estrellas orbitan entre sí, devido a la gravedad. Algunas de estas estrellas binarias pueden experimentar fenómenos como eclipses mutuos cuando una estrella pasa frente a la otra desde nuestra perspectiva en la tierra.")
+        print("Muchas estrellas en el universo existen como parte de sistemas binarios, donde dos estrellas orbitan entre sí, devido a la gravedad. Algunas de estas estrellas binarias pueden experimentar fenómenos \n como eclipses mutuos cuando una estrella pasa frente a la otra desde nuestra perspectiva en la tierra.")
         
         #separacion
         print("\n")
@@ -303,7 +314,7 @@ while True:
         espancion_universo = espancion_universo.replace('Expansión del universo',f'{Fore.LIGHTMAGENTA_EX}Expansión del universo{Style.RESET_ALL}')
         print(espancion_universo)
         print("\n")
-        print("Según la teoría del Big Bang, el universo comenzó como una singularidad hace aproximadamente 13.8 mil millones de años y ha estado expandiéndose desde entonces. Esta expansión se puede observar a través del corrimiento al rojo de la luz de objetos distantes, lo que indica que están alejándose de nosotros.")
+        print("Según la teoría del Big Bang, el universo comenzó como una singularidad hace aproximadamente 13.8 mil millones de años y ha estado expandiéndose desde entonces. Esta expansión se puede observar a través \n del corrimiento al rojo de la luz de objetos distantes, lo que indica que están alejándose de nosotros.")
         #separacion
         print("\n")
         
@@ -325,7 +336,7 @@ while True:
         
         #imagenes
         #nebulosa del águila
-        enlace_nebulosa_águila = "ver foto : https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Eagle_Nebula_from_ESO.jpg/800px-Eagle_Nebula_from_ESO.jpg"
+        enlace_nebulosa_águila = "ver foto(Nebulosa Águila) : https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Eagle_Nebula_from_ESO.jpg/800px-Eagle_Nebula_from_ESO.jpg"
         enlace_nebulosa_águila = enlace_nebulosa_águila.replace('https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Eagle_Nebula_from_ESO.jpg/800px-Eagle_Nebula_from_ESO.jpg',f'{Fore.CYAN}https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Eagle_Nebula_from_ESO.jpg/800px-Eagle_Nebula_from_ESO.jpg{Style.RESET_ALL}') 
         print(enlace_nebulosa_águila)
         
@@ -333,14 +344,91 @@ while True:
         print("\n")
         
         #nebulosa de orión
-        enlace_nebulosa_orión = "ver foto(Nebulosa de Orión) : https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Eagle_Nebula_from_ESO.jpg/800px-Eagle_Nebula_from_ESO.jpg"
-        enlace_nebulosa_orión = enlace_nebulosa_orión.replace('https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Eagle_Nebula_from_ESO.jpg/800px-Eagle_Nebula_from_ESO.jpg',f'{Fore.CYAN}https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Eagle_Nebula_from_ESO.jpg/800px-Eagle_Nebula_from_ESO.jpg{Style.RESET_ALL}')
+        enlace_nebulosa_orión = "ver foto(Nebulosa de Orión) : https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg/1200px-Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg"
+        enlace_nebulosa_orión = enlace_nebulosa_orión.replace('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg/1200px-Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg',f'{Fore.CYAN}https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg/1200px-Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg{Style.RESET_ALL}')
         print(enlace_nebulosa_orión)
+
+        #separacion
+        print("\n")
+
+        #rayos cosmicos
+        mensaje = "15.Rayos cósmicos"
+        mensaje = mensaje.replace('Rayos cósmicos',f'{Fore.LIGHTBLUE_EX}Rayos cósmicos{Style.RESET_ALL}')
+        print(mensaje)
+        print("\n")
+        print("Son partículas de alta energía que viajan a través del espacio a velocidades cercanas a la de la luz. Se originan en eventos cataclísmicos como las explosiones de supernovas o agujeros negros activos.")
+        #separacion
+        print("\n")
+        
+        #imagen
+        enlace_rayos_cosmicos = "ver foto : https://static.nationalgeographic.es/files/styles/image_3200/public/five-hundred-meter-spherical-aperture-telescope-fast-.adapt_.1900.1.jpg?w=1900&h=2664"
+        enlace_rayos_cosmicos = enlace_rayos_cosmicos.replace('https://static.nationalgeographic.es/files/styles/image_3200/public/five-hundred-meter-spherical-aperture-telescope-fast-.adapt_.1900.1.jpg?w=1900&h=2664',f'{Fore.CYAN}https://static.nationalgeographic.es/files/styles/image_3200/public/five-hundred-meter-spherical-aperture-telescope-fast-.adapt_.1900.1.jpg?w=1900&h=2664{Style.RESET_ALL}')
+        print(enlace_rayos_cosmicos)
         
         #separacion
         print("\n")
+        
+        #agujeros de gusanos
+        agujero_gusano = "16.Agujeros de gusanos"
+        agujero_gusano = agujero_gusano.replace('Agujeros de gusanos',f'{Fore.CYAN}Agujeros de gusanos{Style.RESET_ALL}')
+        print(agujero_gusano)
+        print("\n")
+        print("Son hipotéticas estructura en el espacio-tiempo que podrían conectar diferentes regiones del universo o incluso universos paralelos. Aunque todavía son teóricos, los agujeros de gusanos son un tema fasinante \n en la ciencia ficción y la fisica teórica.")
+        print("\n")
+        #imagenes
+        enlace_agujero_gusano = "ver foto : https://d7lju56vlbdri.cloudfront.net/var/ezwebin_site/storage/images/_aliases/img_1col/noticias/dos-grupos-de-fisicos-teoricos-se-adentran-en-los-agujeros-de-gusano/8865364-6-esl-MX/Dos-grupos-de-fisicos-teoricos-se-adentran-en-los-agujeros-de-gusano.jpg"
+        enlace_agujero_gusano = enlace_agujero_gusano.replace('https://d7lju56vlbdri.cloudfront.net/var/ezwebin_site/storage/images/_aliases/img_1col/noticias/dos-grupos-de-fisicos-teoricos-se-adentran-en-los-agujeros-de-gusano/8865364-6-esl-MX/Dos-grupos-de-fisicos-teoricos-se-adentran-en-los-agujeros-de-gusano.jpg',f'{Fore.CYAN}https://d7lju56vlbdri.cloudfront.net/var/ezwebin_site/storage/images/_aliases/img_1col/noticias/dos-grupos-de-fisicos-teoricos-se-adentran-en-los-agujeros-de-gusano/8865364-6-esl-MX/Dos-grupos-de-fisicos-teoricos-se-adentran-en-los-agujeros-de-gusano.jpg{Style.RESET_ALL}')
+        print(enlace_agujero_gusano)
+        
         #separacion
         print("\n")
+
+        #radiacion cosmica
+        radiacion_cosmica = "17.Radiación cósmica de fondo"
+        radiacion_cosmica = radiacion_cosmica.replace('Radiación cósmica de fondo',f'{Fore.RED}Radiación cósmica de fondo{Style.RESET_ALL}')
+        print(radiacion_cosmica)
+        print("\n")
+        print("Es una radiación electromagnética que llena todo el universo y es remanente del big bang. Esta radiación es unirforme en todas las direcciones y proporciona una ventana hacia los primeros momentos del \n universo.")
+        #separacion
+        print("\n")
+        #imagenes
+        enlace_radiacion_cosmica = "ver foto : https://www.iaea.org/sites/default/files/styles/original_image_size/public/solar-radiation-1140x640.png?itok=mzv1I2O3"
+        enlace_radiacion_cosmica = enlace_radiacion_cosmica.replace('https://www.iaea.org/sites/default/files/styles/original_image_size/public/solar-radiation-1140x640.png?itok=mzv1I2O3',f'{Fore.CYAN}https://www.iaea.org/sites/default/files/styles/original_image_size/public/solar-radiation-1140x640.png?itok=mzv1I2O3{Style.RESET_ALL}')
+        print(enlace_radiacion_cosmica)
+
+        #separacion
+        print("\n")
+
+        #pulsares
+        pulsares = "18.Pulsares"
+        print("\n")
+        print("Son estrellas de neutrones altamente magnéticas que emiten 'haces' de radiación electromagnética desde sus polos magnéticos. cuando estos 'haces' se alinean con la tierra, se detectan como pulsos periódicos de radiación, de ahí su nombre")
+        print("\n")
+        #imagen
+        enlace_pulsares = "ver foto : https://www.ngenespanol.com/wp-content/uploads/2023/04/que-son-los-pulsares-como-se-forman-y-que-los-hace-especiales.jpg"
+        enlace_pulsares = enlace_pulsares.replace('https://www.ngenespanol.com/wp-content/uploads/2023/04/que-son-los-pulsares-como-se-forman-y-que-los-hace-especiales.jpg',f'{Fore.CYAN}https://www.ngenespanol.com/wp-content/uploads/2023/04/que-son-los-pulsares-como-se-forman-y-que-los-hace-especiales.jpg{Style.RESET_ALL}')
+        print(enlace_pulsares)
+
+        #sepracion
+        print("\n")
+        
+        #nebulosas planetarias 
+        nebulosas_planetarias = "19.Nebulosas Planetarias"
+        nebulosas_planetarias = nebulosas_planetarias.replace('Nebulosas Planetarias',f'{Fore.LIGHTGREEN_EX}Nebulosas Planetarias{Style.RESET_ALL}')
+        print(nebulosas_planetarias)
+        print("\n")
+        print("Son nebulosas formadas por la eyección de material estelar por parte de estrellas en la etapa final de su evolución. Estas nebulosas suelen tener formas fascinantes y son el resultado de procesos astronómicos complejos")
+        print("\n")
+        #imagenes
+        enlace_nebulosa_planetaria = "ver foto : https://concepto.de/wp-content/uploads/2019/10/nebulosa-helice-planetaria-e1570990002852-800x400.jpg"
+        enlace_nebulosa_planetaria = enlace_nebulosa_planetaria.replace('https://concepto.de/wp-content/uploads/2019/10/nebulosa-helice-planetaria-e1570990002852-800x400.jpg',f'{Fore.CYAN}https://concepto.de/wp-content/uploads/2019/10/nebulosa-helice-planetaria-e1570990002852-800x400.jpg{Style.RESET_ALL}')
+        print(enlace_nebulosa_planetaria)
+        #separacion
+        print("\n")
+        #separacion
+        print("\n")
+        console.print(figlet.renderText("beta"),style='bold green')
+
         #Tiempo para que no se cierre de golpe
         while True:
             time.sleep(1231320)
