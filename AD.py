@@ -3,6 +3,7 @@ import time
 import pyfiglet
 from colorama import Fore, Style, init
 from rich.console import Console
+import os
 import sys
 
 #Activación de codigos
@@ -13,8 +14,7 @@ init()
 for _ in range(5):
     mensaje = print(".", end="", flush=True)
     time.sleep(1)
-sys.stdout.write("\r" + " " * 5 + "\r")
-sys.stdout.flush()
+os.system('cls' if os.name == 'nt' else 'clear')
 #Titulo
 print(figlet.renderText('Leectura'))
 print(figlet.renderText('espacial'))
@@ -23,6 +23,7 @@ print("\n")
 print("-"*209)
 
 #descripcion
+advertencia = "se recomienda leer esto antes que se borre : "
 descripcion = "Esta es una página(proyecto) en python sobre Leectura(astronómicas) en Perú(no necesariamente),SE RECOVENTMIENDA TENER LA PANTALLA ABIERTA(VENTANA COMPLETA) "
 mensaje = "Para entrar a los links(enlaces) haga CTRL + CLICK"
 mensaje = mensaje.replace('CTRL',f'{Fore.CYAN}CTRL{Style.RESET_ALL}')
@@ -34,7 +35,10 @@ descripcion = descripcion.replace('Perú',f'{Fore.LIGHTRED_EX}Perú{Style.RESET_
 descripcion = descripcion.replace('astronómicas',f'{Fore.CYAN}astronómicas{Style.RESET_ALL}')
 descripcion = descripcion.replace('no necesariamente',f'{Fore.LIGHTMAGENTA_EX}no necesariamente{Style.RESET_ALL}')
 descripcion = descripcion.replace('VENTANA COMPLETA',f'{Fore.YELLOW}VENTANA COMPLETA{Style.RESET_ALL}')
+advertencia = advertencia.replace('se recomienda leer esto antes que se borre',f'{Fore.RED}{Style.BRIGHT}se recomienda leer esto antes que se borre{Style.RESET_ALL}')
 
+#impresiones en colores
+print(advertencia)
 print(descripcion)
 print(mensaje)
 print("\n")
@@ -55,14 +59,14 @@ R_contraseña = "123456789"
 time.sleep(2)
 print("-"*100)
 print("espere unos segundos, esto puede tardar un poco")
+print("\n")
 time.sleep(0.9)
 
 #Animación de puntos
 for _ in range(10):
-    mensaje = print(".", end=" ", flush=True)
+    mensaje = print(".", end="", flush=True)
     time.sleep(1)
-sys.stdout.write("\r" + " " * 20 + "\r")
-sys.stdout.flush()
+os.system('cls' if os.name == 'nt' else 'clear')
 print("\n")
 
 
@@ -71,14 +75,24 @@ while True:
     #Separacion
     if nombre == R_nombre and contraseña == R_contraseña:
         print("\n")
-        print("-"*209)
         print(figlet.renderText('EXITO'))
         print("Inicio de sesión completada con éxito")
-        time.sleep(3)
+        time.sleep(1.6)
+        
+        #animacion
+        for _ in range(5):
+            print(".", end="", flush=True)
+            time.sleep(1)
+        
+        #eliminar animacion y lo de arriba
+        os.system('cls' if os.name == 'nt' else 'clear')
         print("\n")
         print("\n")
         print(f"Bienvenido {R_nombre}, la página aun esta en desarrollo, solo puede ver esto usted.")
-        time.sleep(5)
+        
+        #tiempo
+        time.sleep(2)
+        
         print("\n")
         print(figlet.renderText('Desarrollo'))
         print(figlet.renderText(f'{R_nombre}'))
@@ -87,7 +101,18 @@ while True:
         #Ya puro TXT para que sea de Noticias espaciales
         print(figlet.renderText('Espacio'))
         print("\n")
-        time.sleep(5)
+        print("esto se borra en 10 segundos")
+        
+        #tiempo
+        time.sleep(1.5)
+        
+        #animacion
+        for _ in range(10):
+            print(".", end="", flush= True)
+            time.sleep(1)
+
+        #eliminar animacion y lo de arriba
+        os.system('cls' if os.name == 'nt' else 'clear')
         
         #Titulo de espcaio y separacion para que se vea bonito
         print("-"*209)
@@ -109,6 +134,20 @@ while True:
         #Datos curiosos
         print("\n")
         print("-"*209)
+        
+        #tiempo
+        time.sleep(2)
+
+        #animacion de espera de puntos
+        for _ in range(5):
+            print(".", end="", flush=True)
+            time.sleep(1)
+        
+        #eliminacion de la animacion de puntos
+        sys.stdout.write("\r" + " "*10 + "\r")
+        sys.stdout.flush()
+        
+        #datos curiosos
         print("\n")
         print(figlet.renderText('Datos'))
         print(figlet.renderText('Curuosos'))
@@ -401,8 +440,6 @@ while True:
 
         #pulsares
         pulsares = "18.Pulsares"
-        pulsares = pulsares.replace('Pulsares',f'{Fore.BLUE}Pulsares{Style.RESET_ALL}')
-        print(pulsares)
         print("\n")
         print("Son estrellas de neutrones altamente magnéticas que emiten 'haces' de radiación electromagnética desde sus polos magnéticos. cuando estos 'haces' se alinean con la tierra, se detectan como pulsos periódicos de radiación, de ahí su nombre")
         print("\n")
@@ -425,6 +462,7 @@ while True:
         enlace_nebulosa_planetaria = "ver foto : https://concepto.de/wp-content/uploads/2019/10/nebulosa-helice-planetaria-e1570990002852-800x400.jpg"
         enlace_nebulosa_planetaria = enlace_nebulosa_planetaria.replace('https://concepto.de/wp-content/uploads/2019/10/nebulosa-helice-planetaria-e1570990002852-800x400.jpg',f'{Fore.CYAN}https://concepto.de/wp-content/uploads/2019/10/nebulosa-helice-planetaria-e1570990002852-800x400.jpg{Style.RESET_ALL}')
         print(enlace_nebulosa_planetaria)
+        
         #separacion
         print("\n")
 
@@ -442,11 +480,14 @@ while True:
         
         #sepracion
         print("\n")
+        print("-"*209)
         
         #subtitulo : galaxias
         sub_galaxias = "*Galaxias*"
         sub_galaxias = sub_galaxias.replace('Galaxias',f'{Fore.LIGHTBLUE_EX}Galaxias{Style.RESET_ALL}')
-        print(sub_galaxias)
+        ancho_titulo_galaxias = 200
+        print(sub_galaxias.center(ancho_titulo_galaxias))
+        print("-"*209)
         print("\n")
         #galaxia via-lactea
         via_lactea = "1.Vía Láctea"
@@ -468,16 +509,77 @@ while True:
         andromeda = andromeda.replace('Andrómeda(M31)',f'{Fore.LIGHTMAGENTA_EX}Andrómeda(M31){Style.RESET_ALL}')
         print(andromeda)
         print("\n")
-        print("La galaxia de Andrómeda es la galaxia espiral más cercana a la Vía LLáctea y se está acercando a nosotros a unos 110 kilómetros por segundo. Se espera que colisione con nuestra galaxia en unos 4 mil millones de años.")
-         print("\n")
+        print("La galaxia de Andrómeda es la galaxia espiral más cercana a la Vía LLáctea y se está acercando a nosotros a unos 110 kilómetros por segundo. Se espera que colisione con nuestra galaxia en unos \n 4 mil millones de años.")
+        print("\n")
         #imagen
         enlace_andromeda = "ver foto : https://upload.wikimedia.org/wikipedia/commons/5/57/M31bobo.jpg"
         enlace_andromeda = enlace_andromeda.replace('https://upload.wikimedia.org/wikipedia/commons/5/57/M31bobo.jpg',f'{Fore.CYAN}https://upload.wikimedia.org/wikipedia/commons/5/57/M31bobo.jpg{Style.RESET_ALL}')
         print(enlace_andromeda)
+
         #separacion
-         print("\n")
+        print("\n")
+
+        #galaxia de remolino
+        galaxia_remolino = "3.Galaxia de Remolino(M51)"
+        galaxia_remolino = galaxia_remolino.replace('Galaxia de Remolino(M51)',f'{Fore.LIGHTBLUE_EX}Galaxia de Remolino(M51){Style.RESET_ALL}')
+        print(galaxia_remolino)
+        print("\n")
+        print("Es una galaxia espiral situada a unos 23 millones de años luz de la Tierra. Es famosa por su estructura en espiral y su interracción con una galaxia más pequeña que ha causado distorsiones en sus brazos")
+        print("\n")
+        #imagen
+        enlace_galaxia_remolino = "ver foto : https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Messier51.jpg/1200px-Messier51.jpg"
+        enlace_galaxia_remolino =enlace_galaxia_remolino.replace('https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Messier51.jpg/1200px-Messier51.jpg',f'{Fore.CYAN}https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Messier51.jpg/1200px-Messier51.jpg{Style.RESET_ALL}')
+        print(enlace_galaxia_remolino)
         
+        #separacion
+        print("\n")
+
+        #galaxia del sombrero
+        galaxia_sombrero = "4.Galaxia del Sombrero(M104)"
+        galaxia_sombrero = galaxia_sombrero.replace('Galaxia del Sombrero(M104)',f'{Fore.LIGHTMAGENTA_EX}Galaxia del Sombrero(M104){Style.RESET_ALL}')
+        print(galaxia_sombrero)
+        print("\n")
+        print("Conocida por su apariencia similar a un sombrero, esta galaxia elíptica está a unos 28 millones de años luz de distancia. Contiene un agujero negro supermasivo en su centro")
+        print("\n")
+        #imagen
+        enlace_galaxia_sombrero = "ver foto : https://www.iaa.csic.es/sites/default/files/sombrero_starstream2p.jpg"
+        enlace_galaxia_sombrero = enlace_galaxia_sombrero.replace('https://www.iaa.csic.es/sites/default/files/sombrero_starstream2p.jpg',f'{Fore.CYAN}https://www.iaa.csic.es/sites/default/files/sombrero_starstream2p.jpg{Style.RESET_ALL}')
+        print(enlace_galaxia_sombrero)
         
+        #separacion
+        print("\n")
+        
+        #galaxia de cigarro
+        galaxia_cigarro = "5.Galaxia de Cigarro(M82)"
+        galaxia_cigarro = galaxia_cigarro.replace('Galaxia de Cigarro(M82)',f'{Fore.LIGHTBLUE_EX}Galaxia de Cigarro(M82){Style.RESET_ALL}')
+        print(galaxia_cigarro)
+        print("\n")
+        print("Es una galaxia irregular con intensa actividad de formación estelar. Su nombre proviene de su forma alargada y su apariencia brillante en longitudes de onda infrarrojas.")
+        print("\n")
+        #imagen
+        enlace_galaxia_cigarro = "ver foto : https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2019/03/16/15527473482186.jpg"
+        enlace_galaxia_cigarro = enlace_galaxia_cigarro.replace('https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2019/03/16/15527473482186.jpg',f'{Fore.CYAN}https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2019/03/16/15527473482186.jpg{Style.RESET_ALL}')
+        print(enlace_galaxia_cigarro)
+        
+        #separacion
+        print("\n")
+
+        #galaxia del triangulo 
+        galaxia_triangulo = "6.Galaxia del triángulo(M33)"
+        galaxia_triangulo = galaxia_triangulo.replace('Galaxia del triángulo(M33)',f'{Fore.LIGHTRED_EX}Galaxia del triángulo(M33){Style.RESET_ALL}')
+        print(galaxia_triangulo)
+        print("\n")
+        print("Esta galaxia espiral está a unos 3 millones de años luz de la Tierra y es parte del Grupo Local, al que también pertenecen la Vía Láctea y Andrómeda")
+        print("\n")
+        #imagen
+        enlace_galaxia_triangulo = "ver foto : https://astronomiaparatodos.com/wp-content/uploads/2022/10/m33-01_10_2022-querol_a.jpg"
+        enlace_galaxia_triangulo = enlace_galaxia_triangulo.replace('https://astronomiaparatodos.com/wp-content/uploads/2022/10/m33-01_10_2022-querol_a.jpg',f'{Fore.CYAN}https://astronomiaparatodos.com/wp-content/uploads/2022/10/m33-01_10_2022-querol_a.jpg{Style.RESET_ALL}')
+        print(enlace_galaxia_triangulo)
+        
+        #separacion
+        print("\n")
+
+
         #separacion
         print("\n")
         #separacion
@@ -488,6 +590,7 @@ while True:
         while True:
             time.sleep(1231320)
     else:
+        console.print(figlet.renderText('error'),style='bold red')
         print("No se pudo iniciar sesión")
         print("Vuelva a intentarlo")
         time.sleep(2)
