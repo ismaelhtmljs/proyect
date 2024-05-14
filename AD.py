@@ -427,6 +427,59 @@ while True:
         print(enlace_nebulosa_planetaria)
         #separacion
         print("\n")
+
+        #clusters galacticos
+        clusters_galacticos = "20.Clusters galácticos"
+        clusters_galacticos = clusters_galacticos.replace('Clusters galácticos',f'{Fore.LIGHTMAGENTA_EX}Clusters galácticos{Style.RESET_ALL}')
+        print(clusters_galacticos)
+        print("\n")
+        print("Son agrupaciones masivas de galaxias que están unidas por la gravedad. Estos clusters pueden contener cientos o mu¿iles de galaxias y son objetos de estudio para comprender la formación y evolución de las estructuras a gran escala en el universo.")
+        print("\n")
+        #imagen 
+        enlace_clusters_galacticos = "ver foto : https://cordis.europa.eu/docs/results/images/2019-07/396750.jpg"
+        enlace_clusters_galacticos = enlace_clusters_galacticos.replace('https://cordis.europa.eu/docs/results/images/2019-07/396750.jpg',f'{Fore.CYAN}https://cordis.europa.eu/docs/results/images/2019-07/396750.jpg{Style.RESET_ALL}')
+        print(enlace_clusters_galacticos)
+        
+        #sepracion
+        print("\n")
+        
+        #subtitulo : galaxias
+        sub_galaxias = "*Galaxias*"
+        sub_galaxias = sub_galaxias.replace('Galaxias',f'{Fore.LIGHTBLUE_EX}Galaxias{Style.RESET_ALL}')
+        print(sub_galaxias)
+        print("\n")
+        #galaxia via-lactea
+        via_lactea = "1.Vía Láctea"
+        via_lactea = via_lactea.replace('Vía Láctea',f'{Fore.LIGHTRED_EX}Vía Láctea{Style.RESET_ALL}')
+        print(via_lactea)
+        print("\n")
+        print("Nuestra galaxia, la Vía Láctea, es una espiral barrada que contiene entre 100 mil millones y 400 mil millones de estrellas. Estamos ubicados en uno de sus brazos, llamado el 'Brazo de Orión'.")
+        print("\n")
+        #imagen
+        enlace_via_lactea = "ver foto : https://img.europapress.es/fotoweb/fotonoticia_20130603202748_1200.jpg"
+        enlace_via_lactea = enlace_via_lactea.replace('https://img.europapress.es/fotoweb/fotonoticia_20130603202748_1200.jpg',f'{Fore.CYAN}https://img.europapress.es/fotoweb/fotonoticia_20130603202748_1200.jpg{Style.RESET_ALL}')
+        print(enlace_via_lactea)
+        
+        #separacion
+        print("\n")
+        
+        #andromeda 
+        andromeda = "2.Andrómeda(M31)"
+        andromeda = andromeda.replace('Andrómeda(M31)',f'{Fore.LIGHTMAGENTA_EX}Andrómeda(M31){Style.RESET_ALL}')
+        print(andromeda)
+        print("\n")
+        print("La galaxia de Andrómeda es la galaxia espiral más cercana a la Vía LLáctea y se está acercando a nosotros a unos 110 kilómetros por segundo. Se espera que colisione con nuestra galaxia en unos 4 mil millones de años.")
+         print("\n")
+        #imagen
+        enlace_andromeda = "ver foto : https://upload.wikimedia.org/wikipedia/commons/5/57/M31bobo.jpg"
+        enlace_andromeda = enlace_andromeda.replace('https://upload.wikimedia.org/wikipedia/commons/5/57/M31bobo.jpg',f'{Fore.CYAN}https://upload.wikimedia.org/wikipedia/commons/5/57/M31bobo.jpg{Style.RESET_ALL}')
+        print(enlace_andromeda)
+        #separacion
+         print("\n")
+        
+        
+        #separacion
+        print("\n")
         #separacion
         print("\n")
         console.print(figlet.renderText("beta"),style='bold green')
