@@ -487,7 +487,6 @@ while True:
         sub_galaxias = sub_galaxias.replace('Galaxias',f'{Fore.LIGHTBLUE_EX}Galaxias{Style.RESET_ALL}')
         ancho_titulo_galaxias = 200
         print(sub_galaxias.center(ancho_titulo_galaxias))
-        print("-"*209)
         print("\n")
         #galaxia via-lactea
         via_lactea = "1.Vía Láctea"
@@ -579,6 +578,119 @@ while True:
         #separacion
         print("\n")
 
+        #galaxia del sombrero de copa
+        galaxia_sombrero_copa = "7.Galaxia del Sombrero de Copa(NGC 474)"
+        galaxia_sombrero_copa = galaxia_sombrero_copa.replace('Galaxia del Sombrero de Copa(NGC 474)',f'{Fore.LIGHTWHITE_EX}Galaxia del Sombrero de Copa(NGC 474){Style.RESET_ALL}')
+        print(galaxia_sombrero_copa)
+        print("\n")
+        print("Ubicada en la constelación de Piscis, esta galaxia elíptica tiene un aspecto peculiar que se asemeja a un sombrero de copa debido a sus regiones exteriores en forma de anillo.")
+        print("\n")
+        #imagen
+        enlace_galaxia_sombrero_copa= "ver foto : https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/NGC_474_Hubble_WikiSky.jpg/1200px-NGC_474_Hubble_WikiSky.jpg"
+        enlace_galaxia_sombrero_copa = enlace_galaxia_sombrero_copa.replace('https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/NGC_474_Hubble_WikiSky.jpg/1200px-NGC_474_Hubble_WikiSky.jpg',f'{Fore.CYAN}https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/NGC_474_Hubble_WikiSky.jpg/1200px-NGC_474_Hubble_WikiSky.jpg{Style.RESET_ALL}')
+        print(enlace_galaxia_sombrero_copa)
+        
+        #separacion
+        print("\n")
+        print("-"*209)
+        historias = "Historias"
+        historias = historias.replace('Historias',f'{Fore.LIGHTMAGENTA_EX}Historias{Style.RESET_ALL}')
+        ancho_historias = 200
+        print(historias.center(ancho_historias))
+        print("\n")
+        
+        #apollo 11
+        apollo11 = "*Apollo 11 y la llegada a la luna"
+        apollo11 = apollo11.replace('*Apollo 11 y la llegada a la luna',f'{Fore.LIGHTRED_EX}*Apollo 11 y la llegada a la luna{Style.RESET_ALL}')
+        print(apollo11)
+        print("\n")
+        print("La misión Apollo 11 fue un hito histórico en la exploración espacial. En julio de 1969, Neil Armstrong se convirtió en el primer ser humano en caminar sobre la luna, seguido por Bluzz Aldrin.")
+        print("\n")
+        #imagen
+        enlace_neil_armstrong = "Neil Armstrong : https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Neil_Armstrong_pose.jpg/1200px-Neil_Armstrong_pose.jpg"
+        enlace_neil_armstrong = enlace_neil_armstrong.replace('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Neil_Armstrong_pose.jpg/1200px-Neil_Armstrong_pose.jpg',f'{Fore.CYAN}https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Neil_Armstrong_pose.jpg/1200px-Neil_Armstrong_pose.jpg{Style.RESET_ALL}')
+        print(enlace_neil_armstrong)
+        print("\n")
+        enlace_buzz_aldrin = "Buzz Aldrin : https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Buzz_Aldrin_%28S69-31743%29.jpg/640px-Buzz_Aldrin_%28S69-31743%29.jpg"
+        enlace_buzz_aldrin = enlace_buzz_aldrin.replace('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Buzz_Aldrin_%28S69-31743%29.jpg/640px-Buzz_Aldrin_%28S69-31743%29.jpg',f'{Fore.CYAN}https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Buzz_Aldrin_%28S69-31743%29.jpg/640px-Buzz_Aldrin_%28S69-31743%29.jpg{Style.RESET_ALL}')
+        print(enlace_buzz_aldrin)
+        print("\n")
+        print("Esta hazaña marcó un momento crucial en la carrera espacial entre Estados Unidos y la Unión Soviética durante la Guerra Fría")
+        
+        #separacion
+        print("\n")
+
+        #Sally Ride
+        sally_ride = "Sally Ride, primera mujer en llegar al espacio"
+        sally_ride = sally_ride.replace('Sally Ride, primera mujer en llegar al espacio',f'{Fore.RED}Sally Ride, primera mujer en llegar al espacio{Style.RESET_ALL}')
+        print(sally_ride)
+        print("\n")
+        print("En 1983, Sally Ride se convirtió en la primera mujer estadounidense en viajar al espacio a bordo del transbordador espacial Challenger. Su contribución significativa abrió nuevas oportunidades para las mujeres en la exploración espacial.")
+        print("\n")
+        #imagen
+        enlace_sally_ride = "Sally Ride : https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Sally_Ride_in_1984.jpg/1200px-Sally_Ride_in_1984.jpg"
+        enlace_sally_ride = enlace_sally_ride.replace('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Sally_Ride_in_1984.jpg/1200px-Sally_Ride_in_1984.jpg',f'{Fore.CYAN}https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Sally_Ride_in_1984.jpg/1200px-Sally_Ride_in_1984.jpg{Style.RESET_ALL}')
+        print(enlace_sally_ride)
+        print("\n")
+        enlace_challenger = "Challenger : https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/S83-35803_%28cropped%29.jpg/1200px-S83-35803_%28cropped%29.jpg"
+        enlace_challenger = enlace_challenger.replace('https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/S83-35803_%28cropped%29.jpg/1200px-S83-35803_%28cropped%29.jpg',f'{Fore.CYAN}https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/S83-35803_%28cropped%29.jpg/1200px-S83-35803_%28cropped%29.jpg{Style.RESET_ALL}')
+        print(enlace_challenger)
+
+        #separacion
+        print("\n")
+
+        #la tragedia del challenger
+        tragredia_challenger = "La tragedia del Challenger"
+        tragredia_challenger = tragredia_challenger.replace('La tragedia del Challenger',f'{Fore.LIGHTMAGENTA_EX}La tragedia del Challenger{Style.RESET_ALL}')
+        print(tragredia_challenger)
+        print("\n")
+        print("En 1986, el transbordador espacial Challenger sufrió un trágico accidente poco después de su lanzamiento, causando la muerte de sus siete tripulantes, incluida Christa McAuliffe, quien habría sido la primera maestra en viajar al espacio.")
+        print("\n")
+        #imagen
+        enlace_tragedia_challenger = "Tragedia del Challenger : https://cnnespanol.cnn.com/wp-content/uploads/2021/01/200128114911-01-space-shuttle-challenger-restricted-super-169.jpg?quality=100&strip=info"
+        enlace_tragedia_challenger = enlace_tragedia_challenger.replace('https://cnnespanol.cnn.com/wp-content/uploads/2021/01/200128114911-01-space-shuttle-challenger-restricted-super-169.jpg?quality=100&strip=info',f'{Fore.CYAN}https://cnnespanol.cnn.com/wp-content/uploads/2021/01/200128114911-01-space-shuttle-challenger-restricted-super-169.jpg?quality=100&strip=info{Style.RESET_ALL}')
+        print(enlace_tragedia_challenger)
+        print("\n")
+        enlace_christa_mcauliffe = "Christa McAuliffe : https://upload.wikimedia.org/wikipedia/commons/a/aa/ChristaMcAuliffe.jpg"
+        enlace_christa_mcauliffe = enlace_christa_mcauliffe.replace('https://upload.wikimedia.org/wikipedia/commons/a/aa/ChristaMcAuliffe.jpg',f'{Fore.CYAN}https://upload.wikimedia.org/wikipedia/commons/a/aa/ChristaMcAuliffe.jpg{Style.RESET_ALL}')
+        print(enlace_christa_mcauliffe)
+       
+        #separacion
+        print("\n")
+
+        #Expedicion a la estacion espacial internacional(iss)
+        iss = "Expedicion a la Estacion Espacial Internacional(ISS)"
+        iss = iss.replace('Expedicion a la Estacion Espacial Internacional(ISS)',f'{Fore.LIGHTYELLOW_EX}Expedicion a la Estacion Espacial Internacional(ISS){Style.RESET_ALL}')
+        print(iss)
+        print("\n")
+        print("La ISS ha sido un proyecto emblemático de cooperación internacional en el espacio. Desde su lanzamiento en 1998, ha albergado a astronautas de diferentes países, realizando investigaciones científicas y experimentos en microgravedad.")
+        print("\n")
+        enlace_iss = "ISS : https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2010/06/iss2/18901111-1-eng-GB/ISS.jpg"
+        enlace_iss = enlace_iss.replace('https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2010/06/iss2/18901111-1-eng-GB/ISS.jpg',f'{Fore.CYAN}https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2010/06/iss2/18901111-1-eng-GB/ISS.jpg{Style.RESET_ALL}')
+        print(enlace_iss)
+
+        #separacion
+        print("\n")
+
+        #El astronauta Chris Hadfield y su versión de "Space Oddity":
+        chris_hadfield = "El astronauta Chris Hadfield y su versión de 'Space Oddity'"
+        chris_hadfield = chris_hadfield.replace("El astronauta Chris Hadfield y su versión de 'Space Oddity'",f"{Fore.LIGHTMAGENTA_EX}El astronauta Chris Hadfield y su versión de 'Space Oddity'{Style.RESET_ALL}")
+        print(chris_hadfield)
+        print("\n")
+        print("En 2013, Chris Hadfield, astronauta de la Agencia Espacial Canadiense, grabó una versión de la canción 'Space Oddity' de David Bowie mientras estaba a bordo de la ISS, El video se volvió viral y destacó la vida cotidiana de los astronautas en el espacio.")
+        print("\n")
+        #imagen y video
+        enlace_chris_hadfield = "Chris Hadfield : https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Chris_Hadfield_2011.jpg/1200px-Chris_Hadfield_2011.jpg"
+        enlace_chris_hadfield = enlace_chris_hadfield.replace('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Chris_Hadfield_2011.jpg/1200px-Chris_Hadfield_2011.jpg',f'{Fore.CYAN}https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Chris_Hadfield_2011.jpg/1200px-Chris_Hadfield_2011.jpg{Style.RESET_ALL}')
+        print(enlace_chris_hadfield)
+        print("\n")
+        enlace_space_oddity = "Space Oddity : https://youtu.be/iYYRH4apXDo?si=udmzI1H7fuelRG7S"
+        enlace_space_oddity = enlace_space_oddity.replace('https://youtu.be/iYYRH4apXDo?si=udmzI1H7fuelRG7S',f'{Fore.CYAN}https://youtu.be/iYYRH4apXDo?si=udmzI1H7fuelRG7S{Style.RESET_ALL}')
+        print(enlace_space_oddity)
+        print("\n")
+        enlace_video_chris_hadfield = "video grabado : https://youtu.be/KaOC9danxNo?si=7_kG41YMhGy3v9fB"
+        enlace_video_chris_hadfield = enlace_video_chris_hadfield.replace('https://youtu.be/KaOC9danxNo?si=7_kG41YMhGy3v9fB',f'{Fore.CYAN}https://youtu.be/KaOC9danxNo?si=7_kG41YMhGy3v9fB{Style.RESET_ALL}')
+        print(enlace_video_chris_hadfield)
 
         #separacion
         print("\n")
@@ -597,6 +709,7 @@ while True:
         print("\n")
         print("El programa se cerrará en 5 segundos")
         time.sleep(0.6)
+        #animacion
         for _ in range(5):
             print(".", end="", flush=True)  # Imprime un punto sin saltar de línea
             time.sleep(1)
